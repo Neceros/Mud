@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <TerrainDef>
+    <defName>NECMud</defName>
+    <label>mud pit</label>
+    <texturePath>Terrain/Surfaces/Mud</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>330</renderPrecedence>
+    <pathCost>72</pathCost>
+    <designationCategory>Floors</designationCategory>
+    <description>A mud pit is.. a troughed pit filled with mud. Really hard to walk through.</description>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Bridgeable</li>
+    </affordances>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <constructEffect>ConstructDirt</constructEffect>
+    <layerable>true</layerable>
+    <fertility>0</fertility>
+    <generatedFilth>Filth_Dirt</generatedFilth>
+    <costList>
+      <WoodLog>1</WoodLog>
+    </costList>
+    <statBases>
+      <Beauty>-4</Beauty>
+      <Cleanliness>-2</Cleanliness>
+      <WorkToBuild>720</WorkToBuild>
+    </statBases>
+    <takeFootprints>True</takeFootprints>
+    <avoidWander>true</avoidWander>
+    <tools>
+      <li>
+        <label>mud</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>MudInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+    <filthAcceptanceMask>
+      <li>Unnatural</li>
+    </filthAcceptanceMask>
+  </TerrainDef>
+</Defs>
