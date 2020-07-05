@@ -20,9 +20,6 @@
     <layerable>true</layerable>
     <fertility>0</fertility>
     <generatedFilth>Filth_Dirt</generatedFilth>
-    <costList>
-      <WoodLog>1</WoodLog>
-    </costList>
     <statBases>
       <Beauty>-4</Beauty>
       <Cleanliness>-2</Cleanliness>
